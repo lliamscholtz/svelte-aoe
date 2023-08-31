@@ -1,6 +1,16 @@
 {
 	"name": "svelte-aoe",
-	"version": "0.0.6",
+	"version": "0.1.0",
+	"description": "Create captivating web experiences with the svelte-aoe package.",
+	"keywords": [
+		"svelte",
+		"css",
+		"animation",
+		"animation-on-scroll",
+		"animate-on-scroll"
+	],
+	"repository": "git@github.com:lliamscholtz/svelte-aoe.git",
+	"author": "Lliam Scholtz",
 	"license": "MIT",
 	"exports": {
 		".": {
