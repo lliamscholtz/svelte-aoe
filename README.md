@@ -36,7 +36,7 @@ File: `src/routes/+layout.svelte`
 
 ```
 <script>
-	import AnimateOnEnter from 'aoe.svelte';
+	import AnimateOnEnter from 'svelte-aoe';
 </script>
 
 <AppShell>
