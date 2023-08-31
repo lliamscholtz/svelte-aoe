@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
-	import '$lib/svelte-aoe.css';
+	import './animations.css';
+
 	onMount(() => {
 		const elementsToLoadIn = new Set([...document.querySelectorAll('[data-aoe]')]);
 		const observerOptions = {

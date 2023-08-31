@@ -1,5 +1,5 @@
-<script>
-	import AnimateOnEnter from '$lib/svelte-aoe.svelte';
+<script lang="ts">
+	import AnimateOnEnter from '$lib/index.svelte';
 </script>
 
 <AnimateOnEnter />
