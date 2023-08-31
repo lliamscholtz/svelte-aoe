@@ -1,38 +1,56 @@
-# create-svelte
+# Svelte AnimateOnEnter
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
+Create captivating web experiences with the `svelte-aoe` package.
 
-## Creating a project
+`svelte-aoe` utilizes the [Intersection Observer API](https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API) to detect when an element enters the viewport. When the element is detected as being in the viewport, `svelte-aoe` applies a class that triggers a CSS animation.
 
-If you're seeing this, you've probably already done this step. Congrats!
+## Installation
 
-```bash
-# create a new project in the current directory
-npm create svelte@latest
-
-# create a new project in my-app
-npm create svelte@latest my-app
+```
+npm i svelte-aoe --save-dev
 ```
 
-## Developing
+## Setup
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+- Import the package
 
-```bash
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
+```
+import AnimateOnEnter from 'svelte-aoe';
 ```
 
-## Building
+- Add the component to your layout/page.
 
-To create a production version of your app:
-
-```bash
-npm run build
+```
+<AnimateOnEnter />
 ```
 
-You can preview the production build with `npm run preview`.
+- Apply a `data-aoe` attribute to the element that you want to animate and define an animation.
 
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+```
+<img data-aoe="fade-up" src="https://dummyimage.com/500x300"/>
+```
+
+## Example: SvelteKit Global Setup
+
+File: `src/routes/+layout.svelte`
+
+```
+<script>
+	import AnimateOnEnter from 'aoe.svelte';
+</script>
+
+<AppShell>
+	<AnimateOnEnter />
+	<slot />
+</AppShell>
+```
+
+## Animations
+
+- `fade-up`
+- `fade-left`
+- `fade-right`
+
+---
+
+❤️ Inspired by [Animate on Scroll](https://michalsnik.github.io/aos/)
