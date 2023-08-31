@@ -1,0 +1,35 @@
+[data-aoe='fade-up'] {
+	opacity: 0;
+	transform: translateY(45px);
+	transition: transform 0.6s, opacity 0.9s;
+
+	&.aoe {
+		opacity: 1;
+		transform: translateY(0);
+		transition-delay: 0s;
+	}
+}
+
+[data-aoe='fade-left'] {
+	opacity: 0;
+	transform: translateX(45px);
+	transition: transform 0.6s, opacity 0.9s;
+
+	&.aoe {
+		opacity: 1;
+		transform: translateX(0);
+		transition-delay: 0s;
+	}
+}
+
+[data-aoe='fade-right'] {
+	opacity: 0;
+	transform: translateX(-45px);
+	transition: transform 0.6s, opacity 0.9s;
+
+	&.aoe {
+		opacity: 1;
+		transform: translateX(0);
+		transition-delay: 0s;
+	}
+}

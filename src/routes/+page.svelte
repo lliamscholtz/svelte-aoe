@@ -1,3 +1,14 @@
-<h1>Welcome to your library project</h1>
-<p>Create your package using @sveltejs/package and preview/showcase your work with SvelteKit</p>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<script>
+	import AnimateOnEnter from '$lib/svelte-aoe.svelte';
+</script>
+
+<AnimateOnEnter />
+
+<h1 data-aoe="fade-up">Svelte AnimateOnEnter</h1>
+<p data-aoe="fade-left">
+	<strong>svelte-aoe</strong> utilizes the Intersection Observer API to detect when an element enters
+	the viewport. When the element is detected as being in the viewport, svelte-aoe applies a class that
+	triggers a CSS animation.
+</p>
+
+<img data-aoe="fade-right" alt="Dummy" src="https://dummyimage.com/500x300" />
