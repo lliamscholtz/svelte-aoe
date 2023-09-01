@@ -47,9 +47,15 @@ File: `src/routes/+layout.svelte`
 
 ## Animations
 
+- `up`
+- `right`
+- `left`
+- `down`
+- `fade`
 - `fade-up`
-- `fade-left`
 - `fade-right`
+- `fade-left`
+- `fade-down`
 
 ---
 
