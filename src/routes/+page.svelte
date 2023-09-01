@@ -7,6 +7,14 @@
 	let fades = ['fade', 'fade-up', 'fade-right', 'fade-down', 'fade-left'];
 </script>
 
+<svelte:head>
+	<title>Svelte AnimateOnEnter // svelte-aoe</title>
+	<meta
+		name="description"
+		content="Create captivating web experiences with the svelte-aoe package."
+	/>
+</svelte:head>
+
 <AnimateOnEnter />
 
 <main>
