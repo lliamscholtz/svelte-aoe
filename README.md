@@ -4,6 +4,8 @@ Create captivating web experiences with the `svelte-aoe` package.
 
 `svelte-aoe` utilizes the [Intersection Observer API](https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API) to detect when an element enters the viewport. When the element is detected as being in the viewport, `svelte-aoe` applies a class that triggers a CSS animation.
 
+## 🚀 [Demo](https://svelte-aoe.vercel.app/)
+
 ## Installation
 
 ```
